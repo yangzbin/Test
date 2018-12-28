@@ -72,7 +72,10 @@ input, .input {
     color: #ccc;
 }
 .hidden {
-    opacity: 0;
+    display: none;
+}
+.show {
+    display: block;
 }
 .message {
     position: fixed;

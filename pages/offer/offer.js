@@ -39,6 +39,19 @@ Page({
       url: '../image/image'
     })
   },
+  //计算价格
+  bindCalculate:function(e){
+    var cost = parseFloat(e.detail.value.cost == "" ? 0 : e.detail.value.cost)
+    var dry = parseInt(e.detail.value.dry == "" ? 0 : e.detail.value.dry) 
+    var oil = parseInt(e.detail.value.oil == "" ? 0 : e.detail.value.oil) 
+    var cabinet = parseInt(e.detail.value.cabinet == "" ? 0 : e.detail.value.cabinet) 
+    var inter = parseInt(e.detail.value.inter == "" ? 0 : e.detail.value.inter) 
+    var count = cost + dry * 240 + oil * 80 + cabinet * 900 + inter*750
+    this.setData({
+      price:count
+    })
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
