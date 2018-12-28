@@ -1,0 +1,39 @@
+.question-images-area {
+  padding: 40rpx 0;
+}
+
+.question-images-tool {
+  display: flex;
+  align-items: center;
+}
+
+.question-images {
+  margin-top: 40rpx;
+  margin-right: 10rpx;
+}
+
+.q-image-wrap {
+  width: 50%;
+  margin-right: 10rpx;
+}
+
+.q-image {
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.q-image-remover {
+  text-align: center;
+}
+.weui-btn{
+  margin-top: 40rpx;
+}
+.ff_anniu{
+width:100%;
+display: flex;
+/* flex-direction: row;
+flex-wrap: true; 特别注意： 实测这里flex-flow 和 flex-direction / flex-wrap 是不一样的 */ 
+flex-flow: row wrap;
+align-content: space-around;
+justify-content: center;
+}

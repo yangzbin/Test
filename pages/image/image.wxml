@@ -1,0 +1,16 @@
+<view class="container">
+  <view>
+    <button type="primary" bindtap="gotoShow" >点击上传照片</button> 
+  </view>
+  <!-- 图片缩略图  -->
+    <view class="ff_anniu">
+      <block wx:for="{{images}}" wx:key="*this">
+        <view class='question-images'>
+          <image class="q-image" src="{{item}}" mode="aspectFill" data-idx="{{index}}" bindtap="handleImagePreview"></image>
+          <view class="q-image-remover" data-idx="{{index}}" bindtap="removeImage">删除</view>
+        </view>
+      </block>
+    </view>
+    <!-- 提交表单按钮  -->
+  <button class='weui-btn' type="primary" bindtap="submitForm">提交</button>
+</view>
