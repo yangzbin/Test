@@ -50,7 +50,11 @@
     height: 60rpx;
     line-height: 60rpx;
 }
-
+.form-item-hd-long {
+    width: 350rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+}
 .form-item-bd {
     flex: 1;
     height: 60rpx;

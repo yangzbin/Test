@@ -30,6 +30,36 @@
       <input type="text" placeholder-class="input-placeholder" name="address" value="{{address}}" placeholder="请输入详细地址" maxlength="20"/>
     </view>
   </view>
+  <view class="form-item">
+    <view class="form-item-hd">人工费：</view>
+    <view class="form-item-bd">
+      <input type="digit" placeholder-class="input-placeholder" name="cost" value="{{cost}}" placeholder="请输入当地人工费(元/人天)" maxlength="11"/>
+    </view>
+  </view>
+  <view class="form-item">
+    <view class="form-item-hd-long">干式变压器数量：</view>
+    <view class="form-item-bd">
+      <input type="number" placeholder-class="input-placeholder" name="dry" value="{{dry}}" placeholder="请输入数量(台)" maxlength="11"/>
+    </view>
+  </view>
+  <view class="form-item">
+    <view class="form-item-hd-long">油浸式变压器数量：</view>
+    <view class="form-item-bd">
+      <input type="number" placeholder-class="input-placeholder" name="oil" value="{{oil}}" placeholder="请输入数量(台)" maxlength="11"/>
+    </view>
+  </view>
+  <view class="form-item">
+    <view class="form-item-hd-long">高压开关柜数量：</view>
+    <view class="form-item-bd">
+      <input type="number" placeholder-class="input-placeholder" name="switch" value="{{switch}}" placeholder="请输入数量(面)" maxlength="11"/>
+    </view>
+  </view>
+    <view class="form-item">
+    <view class="form-item-hd-long">低压出线间隔数量：</view>
+    <view class="form-item-bd">
+      <input type="number" placeholder-class="input-placeholder" name="inter" value="{{inter}}" placeholder="请输入数量(个)" maxlength="11"/>
+    </view>
+  </view>
 </view>
 <view>
    <button class='btn' bindtap='bindImg' type='primary'>上传图片</button>
